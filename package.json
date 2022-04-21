@@ -8,20 +8,27 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "prisma:generate:develop": "npx dotenv -e .env.develop -- npx prisma generate",
+    "prisma:migrate:develop": "npx dotenv -e .env.develop -- npx prisma migrate dev"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.93",
     "@types/jest": "^26.0.10",
-    "@types/node": "10.17.27",
+    "@types/node": "^17.0.23",
+    "aws-cdk": "2.16.0",
+    "esbuild": "^0.14.27",
     "jest": "^26.4.2",
+    "prisma": "^3.12.0",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "2.20.0",
-    "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
+    "ts-node": "^9.1.1",
+    "typescript": "^4.6.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.20.0",
+    "@prisma/client": "^3.12.0",
+    "aws-cdk-lib": "2.16.0",
     "constructs": "^10.0.0",
+    "dotenv": "^16.0.0",
     "source-map-support": "^0.5.16"
   }
 }
