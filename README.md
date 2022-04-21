@@ -6,7 +6,7 @@ This is not a real world example when you tipically have more then one AWS Lambd
 
 I used python3 as "bundle script" for creating the Prisma layer since you can use it on win, linux or mac.
 
-My best accomplish is ~14Mb for the layer (Down from 100+Mb). If you find more to remove, send PR !
+My best accomplish is ~14Mb for the layer (Down from 230+Mb). If you find more to remove, send PR !
 
 Following this project you will have 2 different clients and "installations" for Prisma.
 
